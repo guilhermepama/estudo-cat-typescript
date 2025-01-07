@@ -5,7 +5,10 @@ import { DeleteCustomerController } from "./controllers/DeleteCustomerController
 
 
 export async function routes(fastify: FastifyInstance, options: FastifyPluginOptions) {
+    console.log("Registering routes...");
+
     fastify.get("/teste", async(request: FastifyRequest, reply: FastifyReply) =>{
+        console.log("Route /teste accessed");
         return { ok: true }
     })
         
