@@ -34,3 +34,11 @@ out/
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignorar tudo fora do diretório backend
+/*
+!/backend/
+
+# Ignorar ../catalogo e ../frontend
+../catalogo/
+../frontend/
